@@ -146,6 +146,7 @@ h2{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:.6em}
 /* ---- Depoimentos ---- */
 .depo{padding:84px 0;background:var(--ink)}
 .depo-card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-left:4px solid var(--accent);border-radius:var(--radius);padding:28px 26px;display:flex;flex-direction:column;gap:18px}
+.depo-foto{width:100%;border-radius:10px;margin-bottom:4px}
 .depo-card blockquote{font-size:.98rem;color:#d4d8dc;font-style:italic}
 .depo-card figcaption{display:flex;flex-direction:column}
 .depo-card figcaption span{font-size:.8rem;color:var(--accent);font-weight:600}

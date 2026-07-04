@@ -95,6 +95,7 @@
   /* ---- Depoimentos ---- */
   $("depo-grid").innerHTML = C.depoimentos.map(d => `
     <figure class="depo-card">
+      ${d.foto ? `<img class="depo-foto" src="${d.foto}" alt="Foto do aluno" loading="lazy">` : ""}
       <blockquote>“${d.texto}”</blockquote>
       <figcaption><strong>${d.nome}</strong><span>${d.resultado}</span></figcaption>
     </figure>`).join("");
@@ -107,11 +108,15 @@
       <p>${f.resposta}</p>
     </details>`).join("");
 
-  /* ---- Captura ---- */
-  $("cap-titulo").textContent = C.captura.titulo;
-  $("cap-texto").textContent = C.captura.texto;
-  $("cap-botao").textContent = C.captura.botao;
-  $("cap-form").action = `https://formspree.io/f/${C.formspreeId}`;
+  /* ---- Captura (só aparece se ativa) ---- */
+  if (C.captura && C.captura.ativo) {
+    $("cap-titulo").textContent = C.captura.titulo;
+    $("cap-texto").textContent = C.captura.texto;
+    $("cap-botao").textContent = C.captura.botao;
+    $("cap-form").action = `https://formspree.io/f/${C.formspreeId}`;
+  } else {
+    $("captura-sec").hidden = true;
+  }
 
   /* ---- CTA final ---- */
   $("final-titulo").textContent = C.ctaFinal.titulo;

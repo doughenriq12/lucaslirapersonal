@@ -52,9 +52,9 @@ const CONFIG = {
   /* ---------- IMAGENS ---------- */
   imagens: {
     /* fundos do hero: 3 fotos que se revezam com zoom lento */
-    heroSlides: ["img/slide1.svg", "img/slide2.svg", "img/slide3.svg"],
-    sobre: "img/sobre.svg",
-    final: "img/final.svg"
+    heroSlides: ["img/slide1.jpg", "img/slide2.jpg", "img/slide3.jpg"],
+    sobre: "img/sobre.jpg",
+    final: "img/final.jpg"
   },
 
   /* ---------- HERO ---------- */
@@ -134,12 +134,12 @@ const CONFIG = {
 
   /* ---------- RESULTADOS ANTES/DEPOIS (slider arrastável) ---------- */
   resultados: {
-    ativo: true,
+    ativo: false,  /* reativar quando o Lucas enviar as fotos originais */
     titulo: "Transformações reais",
     intro: "Arraste para comparar. Casos reais de alunos acompanhados de perto.",
     casos: [
-      { antes: "img/caso1-antes.svg", depois: "img/caso1-depois.svg", legenda: "Caso real a inserir — fotos no repositório do site original" },
-      { antes: "img/caso2-antes.svg", depois: "img/caso2-depois.svg", legenda: "Caso real a inserir — fotos no repositório do site original" }
+      { antes: "img/caso1-antes.jpg", depois: "img/caso1-depois.jpg", legenda: "Método Waze — acompanhamento online" },
+      { antes: "img/caso2-antes.jpg", depois: "img/caso2-depois.jpg", legenda: "Método Waze — acompanhamento online" }
     ]
   },
 
@@ -153,7 +153,8 @@ const CONFIG = {
     {
       nome: "Aluno — recuperação",
       texto: "Depoimento real a coletar com o Lucas: caso de retorno ao treino com acompanhamento próximo.",
-      resultado: "Acompanhamento individualizado"
+      resultado: "Acompanhamento individualizado",
+      foto: "img/depo-ciclista.jpg"
     },
     {
       nome: "Aluno — rotina corrida",
@@ -190,8 +191,9 @@ const CONFIG = {
     }
   ],
 
-  /* ---------- CAPTURA DE E-MAIL ---------- */
+  /* ---------- CAPTURA DE E-MAIL (reativar quando o e-book estiver pronto) ---------- */
   captura: {
+    ativo: false,
     titulo: "Guia gratuito: por onde começar a emagrecer",
     texto: "Deixe seu e-mail para receber um guia prático com os primeiros passos para emagrecer treinando com segurança e constância.",
     botao: "Quero receber"

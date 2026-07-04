@@ -11,8 +11,8 @@ const CONFIG = {
   nome: "Lucas Lira",
   nomeCompleto: "Lucas Lira",
   cref: "CREF-GO 15995",
-  cidade: "Goiânia",
-  regiao: "Goiânia e região",
+  cidade: "Goianira",
+  regiao: "Goianira · Região Metropolitana",
   titulo: "Personal Trainer",
 
   /* ---------- CONTATO ---------- */
@@ -37,7 +37,7 @@ const CONFIG = {
   /* ---------- CARD CIDADE/HORA/TEMPO (ativo:false para ocultar) ---------- */
   clima: {
     ativo: true,
-    cidade: "Goiânia",
+    cidade: "Goianira",
     lat: -16.6869,
     lon: -49.2648,
     fuso: "America/Sao_Paulo"
@@ -115,7 +115,7 @@ const CONFIG = {
   servicos: [
     { titulo: "Consultoria On-line",     texto: "Acompanhamento individualizado a distância: treino exclusivo, vídeos de execução e suporte direto no WhatsApp." },
     { titulo: "Emagrecimento",           texto: "Estratégia focada em perda de gordura com rotina sustentável — o processo que já transformou mais de 190 alunos." },
-    { titulo: "Personal Presencial",     texto: "Aulas individuais em Goiânia com atenção total à execução e à progressão. Valores sob consulta." },
+    { titulo: "Personal Presencial",     texto: "Aulas individuais em Goianira com atenção total à execução e à progressão. Valores sob consulta." },
     { titulo: "Protocolo Joelho",        texto: "Treino adaptado para quem sente dores no joelho: fortalecer e evoluir sem agravar o desconforto." },
     { titulo: "Protocolo Ombro",         texto: "Progressão segura para quem tem limitações ou dores no ombro, com foco em mobilidade e estabilidade." },
     { titulo: "Protocolo Lombar",        texto: "Fortalecimento do core e reeducação de movimento para treinar forte convivendo com dor lombar." }
@@ -202,7 +202,7 @@ const CONFIG = {
   /* ---------- CTA FINAL ---------- */
   ctaFinal: {
     titulo: "Pronto para começar sua transformação?",
-    texto: "Acompanhamento individualizado, on-line ou presencial em Goiânia. Mais de 190 pessoas já fizeram esse caminho — a próxima pode ser você.",
+    texto: "Acompanhamento individualizado, on-line ou presencial em Goianira. Mais de 190 pessoas já fizeram esse caminho — a próxima pode ser você.",
     botao: "Chamar o Lucas no WhatsApp"
   },
 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs><radialGradient id="g3" cx="50%" cy="38%" r="80%">
+    <stop offset="0" stop-color="#16273E"/><stop offset="1" stop-color="#0A1628"/>
+  </radialGradient></defs>
+  <rect width="1600" height="900" fill="url(#g3)"/>
+  <circle cx="800" cy="380" r="300" fill="#F0A63C" opacity="0.05"/>
+  <g fill="#1C2B42" opacity="0.9">
+    <circle cx="500" cy="600" r="90"/><rect x="455" y="470" width="90" height="70" rx="30" fill="none" stroke="#1C2B42" stroke-width="26"/>
+    <circle cx="850" cy="620" r="70"/><rect x="815" y="520" width="70" height="56" rx="24" fill="none" stroke="#1C2B42" stroke-width="20"/>
+    <circle cx="1150" cy="605" r="82"/><rect x="1110" y="488" width="80" height="64" rx="27" fill="none" stroke="#1C2B42" stroke-width="23"/></g>
+  <text x="800" y="855" text-anchor="middle" font-family="Arial" font-size="22" fill="#3A4A62" letter-spacing="4">FUNDO 3 — SUBSTITUIR POR FOTO REAL (1600×900)</text>
+</svg>

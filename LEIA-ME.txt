@@ -1,0 +1,47 @@
+============================================================
+MATRIZ PERSONAL TRAINER — COMO PERSONALIZAR PARA UM NOVO CLIENTE
+============================================================
+
+REGRA DE OURO: edite APENAS o arquivo config.js.
+Não é preciso mexer em index.html, styles.css ou render.js.
+
+PASSO A PASSO (meta: menos de 30 minutos por demo)
+--------------------------------------------------
+1. Duplique a pasta inteira e renomeie (ex.: demo-fulano).
+
+2. Abra config.js e troque:
+   - nome, nomeCompleto, cref, cidade, regiao
+   - whatsapp (só números: 55 + DDD + número), email, instagram
+   - cores (pegue as cores do Instagram/logo do prospect)
+   - textos do hero, sobre, serviços etc. (adapte à especialidade dele)
+   - depoimentos: use avaliações REAIS do Google/Instagram do prospect
+     (isso é o que mais impressiona no demo)
+
+3. Fotos: baixe 3 fotos do Instagram/Google do prospect, salve em /img
+   como hero.jpg, sobre.jpg e final.jpg, e atualize os caminhos em
+   config.js > imagens. Enquanto não tiver fotos, os SVGs provisórios
+   seguram o layout.
+
+4. Teste local: abra o index.html no navegador (duplo clique já funciona).
+
+5. Publicar demo: suba a pasta num repositório GitHub → Settings →
+   Pages → branch main. Em ~1 minuto o link está no ar.
+
+COMPLIANCE (CONFEF/CREF)
+------------------------
+- Nome completo + número do CREF + contato aparecem no rodapé de
+  toda página (obrigatório).
+- O disclaimer "resultados variam de pessoa para pessoa" já está
+  incluído nos depoimentos e no rodapé. NÃO remova.
+- Não prometa resultados específicos ("perca 10kg em 30 dias") nos
+  textos do config.
+
+CAPTURA DE E-MAIL
+-----------------
+Crie um form no formspree.io e cole o ID em config.js > formspreeId.
+Enquanto o ID for o placeholder, o formulário não envia (ok p/ demo).
+
+CRONOMETRE
+----------
+Anote quanto tempo levou cada demo. Esse número define se o modelo
+escala. Meta: 30 minutos ou menos.

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Trainer</title>
+  <meta name="description" content="Treinos personalizados com acompanhamento profissional. Atendimento presencial e consultoria online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js"></script>
+</head>
+<body>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <div class="topbar">
+    <div class="wrap topbar-in">
+      <span id="tb-regiao"></span>
+      <div class="topbar-links">
+        <a id="tb-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a id="tb-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVEGAÇÃO ===== -->
+  <header class="nav" id="topo">
+    <div class="wrap nav-in">
+      <a class="brand" href="#topo">
+        <img id="brand-logo" src="" alt="" class="brand-logo" hidden>
+        <span class="brand-txt"><span id="brand-nome"></span><small id="brand-titulo"></small></span>
+      </a>
+      <nav class="menu" id="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#metodologia">Metodologia</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato" class="menu-cta">Contato</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO (slideshow de fundo com zoom lento) ===== -->
+  <section class="hero">
+    <div class="hero-slides" id="hero-slides" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="clima-card" id="clima-card" hidden>
+      <span class="clima-cidade" id="clima-cidade"></span>
+      <span class="clima-hora" id="clima-hora">--:--</span>
+      <span class="clima-tempo" id="clima-tempo"></span>
+    </div>
+    <div class="wrap hero-in">
+      <img id="hero-logo" class="hero-logo" src="" alt="" hidden>
+      <p class="eyebrow" id="hero-eyebrow"></p>
+      <h1 id="hero-headline"></h1>
+      <p class="hero-sub" id="hero-sub"></p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" id="hero-cta1" href="#" target="_blank" rel="noopener"></a>
+        <a class="btn btn-ghost" id="hero-cta2" href="#" target="_blank" rel="noopener"></a>
+      </div>
+      <p class="hero-cred" id="hero-cred"></p>
+    </div>
+  </section>
+
+  <!-- ===== ESTATÍSTICAS ===== -->
+  <section class="stats" id="stats-sec" hidden>
+    <div class="wrap"><div class="stats-grid" id="stats-grid"></div></div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="difs">
+    <div class="wrap">
+      <div class="grid-3" id="difs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre section-light" id="sobre">
+    <div class="wrap sobre-in">
+      <div class="sobre-img"><img id="img-sobre" src="" alt="Personal trainer em atendimento"></div>
+      <div class="sobre-txt">
+        <p class="tag">Bloco A · Quem te acompanha</p>
+        <h2 id="sobre-titulo"></h2>
+        <div id="sobre-paragrafos"></div>
+        <div class="chips" id="sobre-chips"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METODOLOGIA ===== -->
+  <section class="metodo" id="metodologia">
+    <div class="wrap">
+      <p class="tag tag-light">Bloco B · O método</p>
+      <h2 id="metodo-titulo"></h2>
+      <p class="metodo-intro" id="metodo-intro"></p>
+      <div class="grid-4" id="metodo-grid"></div>
+      <div class="center"><a class="btn btn-solid" id="metodo-cta" href="#" target="_blank" rel="noopener"></a></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="servicos section-light" id="servicos">
+    <div class="wrap">
+      <p class="tag">Bloco C · Programas</p>
+      <h2>Programas para cada objetivo</h2>
+      <div class="grid-3" id="serv-grid"></div>
+      <div class="center"><a class="btn btn-dark" id="serv-cta" href="#" target="_blank" rel="noopener"></a></div>
+    </div>
+  </section>
+
+  <!-- ===== RESULTADOS ANTES/DEPOIS ===== -->
+  <section class="resultados" id="resultados-sec" hidden>
+    <div class="wrap">
+      <p class="tag tag-light">Resultados</p>
+      <h2 id="res-titulo"></h2>
+      <p class="res-intro" id="res-intro"></p>
+      <div class="res-grid" id="res-grid"></div>
+      <p class="disclaimer" id="res-disclaimer"></p>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="depo" id="depoimentos">
+    <div class="wrap">
+      <p class="tag tag-light">Bloco D · Quem já treina</p>
+      <h2>Resultados que vão além do espelho</h2>
+      <div class="grid-3" id="depo-grid"></div>
+      <p class="disclaimer" id="depo-disclaimer"></p>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq section-light" id="faq">
+    <div class="wrap faq-in">
+      <div>
+        <p class="tag">Perguntas frequentes</p>
+        <h2>Tire suas dúvidas antes de começar</h2>
+        <p class="faq-hint">Não encontrou sua dúvida? É só chamar no WhatsApp.</p>
+      </div>
+      <div id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- ===== CAPTURA DE E-MAIL ===== -->
+  <section class="captura">
+    <div class="wrap captura-in">
+      <div>
+        <h2 id="cap-titulo"></h2>
+        <p id="cap-texto"></p>
+      </div>
+      <form id="cap-form" method="POST">
+        <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+        <button type="submit" class="btn btn-solid" id="cap-botao"></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="final" id="contato">
+    <div class="wrap final-in">
+      <div class="final-txt">
+        <h2 id="final-titulo"></h2>
+        <p id="final-texto"></p>
+        <a class="btn btn-solid btn-lg" id="final-cta" href="#" target="_blank" rel="noopener"></a>
+      </div>
+      <div class="final-img"><img id="img-final" src="" alt="Treino em andamento"></div>
+    </div>
+  </section>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand" id="ft-nome"></p>
+          <p id="ft-cref" class="footer-cref"></p>
+          <p id="ft-regiao"></p>
+        </div>
+        <div>
+          <p class="footer-h">Contato</p>
+          <p id="ft-tel"></p>
+          <p id="ft-email"></p>
+          <div class="topbar-links">
+            <a id="ft-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            <a id="ft-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-h">Navegação</p>
+          <p><a href="#sobre">Sobre</a> · <a href="#servicos">Serviços</a> · <a href="#faq">FAQ</a></p>
+        </div>
+      </div>
+      <p class="disclaimer" id="ft-disclaimer"></p>
+      <p class="footer-copy" id="ft-copy"></p>
+    </div>
+  </footer>
+
+  <a id="wa-float" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="#fff" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm0 21.7c-1.4 0-3.3-.5-4.7-1.4l-.5-.3-4.3 1.4 1.4-4.2-.3-.5c-1.2-1.7-1.9-3.7-1.9-5.8C5.7 9.5 10.3 5 16 5s10.3 4.5 10.3 9.9-4.6 9.8-10.3 9.8zm5.6-7.3c-.3-.2-1.8-.9-2.1-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1s0-.5.1-.6c.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5s.1-.4 0-.5c-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1.1 1-1.1 2.5s1.1 2.9 1.3 3.1c.2.2 2.2 3.4 5.4 4.7.8.3 1.4.5 1.8.7.8.2 1.5.2 2 .1.6-.1 1.8-.7 2.1-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg>
+    <span>Entre em contato</span>
+  </a>
+
+  <script src="render.js"></script>
+</body>
+</html>

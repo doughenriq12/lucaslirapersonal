@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-label="Ilustração provisória: treino em andamento">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#18212B"/><stop offset="1" stop-color="#0E1216"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="520" fill="url(#bg2)"/>
+  <circle cx="300" cy="230" r="150" fill="#FF6B2C" opacity="0.15"/>
+  <!-- silhueta correndo -->
+  <g fill="#2A3542">
+    <circle cx="316" cy="150" r="27"/>
+    <rect x="288" y="176" width="50" height="100" rx="20" transform="rotate(10 313 226)"/>
+    <rect x="258" y="184" width="16" height="80" rx="8" transform="rotate(46 266 224)"/>
+    <rect x="336" y="188" width="16" height="80" rx="8" transform="rotate(-38 344 228)"/>
+    <rect x="272" y="262" width="18" height="104" rx="9" transform="rotate(30 281 314)"/>
+    <rect x="322" y="266" width="18" height="104" rx="9" transform="rotate(-22 331 318)"/>
+  </g>
+  <rect x="90" y="400" width="380" height="6" rx="3" fill="#FF6B2C" opacity="0.6"/>
+  <text x="280" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#8d949c" letter-spacing="3">FOTO DE TREINO</text>
+  <text x="280" y="476" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#5a616a">substituir por foto real (560×520)</text>
+</svg>

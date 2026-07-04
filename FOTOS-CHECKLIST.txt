@@ -1,0 +1,44 @@
+============================================================
+CHECKLIST DE FOTOS — MATRIZ PERSONAL TRAINER
+(enviar ao cliente / usar ao personalizar um demo)
+============================================================
+
+1) FUNDOS DO HERO (topo do site) — 3 fotos
+   Dimensão:   1600 × 900 px (mínimo) — horizontal 16:9
+   Arquivos:   img/slide1.jpg, slide2.jpg, slide3.jpg
+   Conteúdo:   cenas de treino/academia. O texto fica POR CIMA,
+               centralizado — prefira fotos com o centro "calmo"
+               (sem rosto ou detalhe importante no meio).
+   Evitar:     fotos verticais, fotos muito claras (o texto é
+               branco), marcas de terceiros visíveis.
+
+2) SEÇÃO "SOBRE MIM" — 1 foto
+   Dimensão:   560 × 640 px (mínimo) — vertical/retrato
+   Arquivo:    img/sobre.jpg
+   Conteúdo:   retrato profissional do personal, de frente,
+               ou atendendo um aluno. É a foto de confiança.
+
+3) CTA FINAL (antes do rodapé) — 1 foto
+   Dimensão:   560 × 520 px (mínimo) — quase quadrada
+   Arquivo:    img/final.jpg
+   Conteúdo:   ação/movimento: treino acontecendo, energia.
+
+4) LOGO — 2 versões (se o cliente tiver)
+   Formato:    PNG com FUNDO TRANSPARENTE (obrigatório)
+   Arquivos:   img/logo-white.png  (branca — nav e hero)
+               img/logo-color.png  (colorida — reserva)
+   Dica:       se só houver PDF/CDR, extrair via pdftocairo
+               (fluxo já validado). Sem logo? Deixar os campos
+               logo.nav e logo.destaque = "" no config — o site
+               usa o nome em texto automaticamente.
+
+REGRAS GERAIS
+-------------
+- Formato: JPG para fotos (qualidade 80–85%), PNG só p/ logo.
+- Peso: até ~300 KB por foto (comprimir em squoosh.app).
+- Pode mandar MAIOR que o mínimo — nunca menor (fica embaçado).
+- Direitos: só fotos do próprio cliente. Nada de foto com
+  terceiros identificáveis sem autorização, nem marcas/logos
+  de academias ou produtos visíveis (recortar ou tratar).
+- Depois de salvar em /img, conferir os caminhos em config.js
+  > imagens e > logo.

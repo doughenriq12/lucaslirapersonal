@@ -146,20 +146,21 @@ const CONFIG = {
   /* ---------- DEPOIMENTOS (PLACEHOLDER — trocar por depoimentos reais do Lucas) ---------- */
   depoimentos: [
     {
-      nome: "Aluna — emagrecimento",
-      texto: "Depoimento real a coletar com o Lucas: caso de emagrecimento acompanhado na consultoria on-line.",
-      resultado: "Consultoria on-line"
+      nome: "Rafael Pereira",
+      texto: "Cheguei com bastante dificuldade de mobilidade e insegurança pra fazer os movimentos. O Lucas montou um treino totalmente no meu ritmo, respeitando meus limites e evoluindo aos poucos. Hoje me movimento com muito mais facilidade e faço coisas do dia a dia que antes eram difíceis pra mim. Sou muito grato.",
+      resultado: "Ganho de mobilidade e autonomia",
+      foto: "img/depo-rafael.jpg"
     },
     {
-      nome: "Aluno — recuperação",
-      texto: "Depoimento real a coletar com o Lucas: caso de retorno ao treino com acompanhamento próximo.",
-      resultado: "Acompanhamento individualizado",
+      nome: "Cláudio Paula — ciclista (mountain bike)",
+      texto: "Convivia com dores nas costas, nos ombros, no tríceps e nos membros inferiores, e ainda assim praticava mountain bike sentindo tudo isso. O maior desejo dele era parar de sentir dor. Com treinos específicos, as dores foram ficando cada vez menores — e depois usamos a musculação para melhorar o desempenho no esporte. O resultado veio na prática: na mesma prova do ano anterior, ele foi 9 minutos mais rápido, numa modalidade em que baixar 2 minutos já é muito.",
+      resultado: "Fim das dores + ganho de performance",
       foto: "img/depo-ciclista.jpg"
     },
     {
-      nome: "Aluno — rotina corrida",
-      texto: "Depoimento real a coletar com o Lucas: caso de quem conciliou treino com rotina intensa de trabalho.",
-      resultado: "Consultoria on-line"
+      nome: "Em breve",
+      texto: "Novo depoimento em breve.",
+      resultado: "Aguardando publicação"
     }
   ],
 
@@ -208,6 +209,15 @@ const CONFIG = {
 
   /* ---------- COMPLIANCE (CONFEF / CREF14-GO Res. 087/2020) ---------- */
   disclaimer: "Os resultados variam de pessoa para pessoa e dependem de fatores individuais como frequência, alimentação, sono e histórico de saúde. Nenhum resultado específico é garantido. Prescrição de dieta é atribuição do nutricionista e não faz parte deste serviço.",
+
+  /* ---------- COOKIES / PRIVACIDADE (LGPD) ---------- */
+  cookies: {
+    ativo: true,
+    texto: "Este site usa cookies e recursos externos (como fontes e mapas) para funcionar e melhorar sua experiência. Ao continuar navegando, você concorda com nossa Política de Privacidade.",
+    botao: "Aceitar",
+    linkTexto: "Política de Privacidade",
+    linkUrl: "privacidade.html"
+  },
 
   /* ---------- RODAPÉ ---------- */
   anoInicio: 2026

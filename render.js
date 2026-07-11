@@ -31,9 +31,7 @@
     $("hero-logo").hidden = false;
   }
 
-  /* ---- Topbar / Nav ---- */
-  $("tb-regiao").textContent = `${C.titulo} · ${C.regiao}`;
-  $("tb-wa").href = waLink; $("tb-ig").href = igLink;
+  /* ---- Nav ---- */
   $("brand-nome").textContent = C.nome;
   $("brand-titulo").textContent = C.titulo;
 
@@ -246,6 +244,26 @@
 
   /* ---- Botão flutuante WhatsApp ---- */
   $("wa-float").href = waLink;
+
+  /* ---- Banner de cookies (LGPD) ---- */
+  if (C.cookies && C.cookies.ativo) {
+    let aceito = false;
+    try { aceito = localStorage.getItem("cookiesAceitos") === "1"; } catch (e) {}
+    if (!aceito) {
+      const banner = $("cookie-banner");
+      $("cookie-text").textContent = C.cookies.texto;
+      const link = $("cookie-link");
+      link.textContent = C.cookies.linkTexto;
+      link.href = C.cookies.linkUrl;
+      const btn = $("cookie-accept");
+      btn.textContent = C.cookies.botao;
+      banner.hidden = false;
+      btn.addEventListener("click", () => {
+        try { localStorage.setItem("cookiesAceitos", "1"); } catch (e) {}
+        banner.hidden = true;
+      });
+    }
+  }
 
   /* ---- Menu mobile ---- */
   const burger = $("burger"), menu = $("menu");
